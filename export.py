@@ -1,7 +1,7 @@
 import argparse
 
-import keras.backend as K
-from keras.models import load_model
+from tensorflow.contrib.keras.python.keras import backend as K
+from tensorflow.contrib.keras.python.keras.models import load_model
 
 def load_inference_model(model_path):
 	K.set_learning_phase(0)
