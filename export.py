@@ -4,7 +4,7 @@ from tensorflow.contrib.keras.python.keras import backend as K
 from tensorflow.contrib.keras.python.keras.models import load_model
 
 def load_inference_model(model_path):
-	K.set_learning_phase(False)
+	K.set_learning_phase(0)
 	return load_model(model_path)
 
 def main():
